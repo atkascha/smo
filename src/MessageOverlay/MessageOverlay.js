@@ -1,3 +1,4 @@
+// wrapper class for MessageOverlay
 class MessageOverlay {
   constructor() {
     this.menu = document.getElementById('menu');

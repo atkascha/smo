@@ -1,3 +1,7 @@
+//
+// M E S S A G E  O V E R L A Y
+//
+
 // constants
 const ENTER_KEY = 13;
 const MESSAGE_CONTAINER = document.getElementById('messages');

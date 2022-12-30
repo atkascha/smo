@@ -2,7 +2,7 @@
 
 ![via https://huggingface.co/spaces/DGSpitzer/DGS-Diffusion-Space](/image.png)
 
-A _streamer message overlay_. Right now, it operates as a webpage.
+A _streamer message overlay_. Right now, it operates as a webpage. You can see an example video [HERE](https://www.youtube.com/watch?v=bye2O2X_W5o&t=1s&ab_channel=Atkascha)
 
 In the future, I think I'll make this a desktop app with different themes, but we'll see.
 
@@ -48,14 +48,3 @@ _I'll add an example video of this in the not too distant future_
 #### In addition to messaging, there's TTS
 
 There is an option to have your messages spoken. By default, its off. If its something people like, I can add more standard voices.
-
-#### FIXMEs
-
-```js
-// Message.js#render()
-this.config.config
-
-// code refactor
-
-// TTS is a bit jank when first clicking it... need to find out why
-```

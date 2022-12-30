@@ -1,3 +1,4 @@
+// class for Config
 class Config {
   constructor() {
     this.position = 1;
@@ -54,6 +55,7 @@ class Config {
     }
   }
 
+  // @FIXME: Method length/a lot of logic
   #setupListeners() {
     this.#menu.querySelector('#load_button').addEventListener('change', function(e) {
       this.#overwrite(e.target.files);
