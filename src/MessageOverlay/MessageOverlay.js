@@ -1,6 +1,5 @@
 class MessageOverlay {
   constructor() {
-    this.configFile = 
     this.menu = document.getElementById('menu');
     this.textarea = document.getElementById('input');
     this.config = new Config();
