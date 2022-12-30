@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MessageOverlay</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+
+    <div id="menu">
+      <div class="bar">
+        <div class="title">config</div>
+        <div class="close">X</div>
+      </div>
+
+      <div class="inputs">
+        <div class="input">
+          <label>Config file</label>
+          <input type="file" id="load_button" accept="application/JSON">
+        </div>
+        <div class="input">
+          <div class="label">Text size (px)</div>
+          <input name="text_size" type="number" min="8" max="96" value="24">
+        </div>
+        <div class="input">
+          <div class="label">Text color</div>
+          <input name="text_color" type="color" value="#000000">
+        </div>
+        <div class="input">
+          <div class="label">Border color</div>
+          <input name="border_color" type="color" value="#000000">
+        </div>
+        <div class="input">
+          <div class="label">Background color</div>
+          <input name="background_color" type="color" value="#FFFFFF">
+        </div>
+        <div class="input">
+          <div class="label">Text Align</div>
+          <input name="text_align" type="radio" value="left" checked>
+          <label>Left<label>
+          <input name="text_align" type="radio" value="right">
+          <label>Right</label>
+        </div>
+        <div class="input">
+          <div class="label">Message order</div>
+          <input name="message_order" type="radio" value="1" checked>
+          <label>Top to bottom</label>
+          <input name="message_order" type="radio" value="2">
+          <label>Bottom to top</label>
+        </div>
+        <div class="input">
+          <div class="label">Use TTS?</div>
+          <input name="use_tts" type="radio" value="true">
+          <label>yes</label>
+          <input name="use_tts" type="radio" value="false" checked>
+          <label>no</label>
+        </div>
+        <div class="input">
+          <div class="label">Voice option</div>
+          <input disabled name="voice" type="radio" value="0" checked>
+          <label>David</label>
+          <input disabled name="voice" type="radio" value="1">
+          <label>Mark</label>
+          <input disabled name="voice" type="radio" value="2">
+          <label>Zira</label>
+        </div>
+        <button id="save_button">Save</button>
+      </div>
+    </div>
+
+    <input
+      id="input"
+      draggable="true"
+      placeholder="Type message here and hit ENTER... press 'c' for Config"
+      onkeypress="listen()"
+    >
+    <div id="messages">
+      <!-- <div class="message-container">
+        <div class="message">blah</div>
+      </div> -->
+    </div>
+
+  </body>
+
+  <script src="./src/MessageOverlay/Config.js"></script>
+  <script src="./src/MessageOverlay/Speaker.js"></script>
+  <script src="./src/MessageOverlay/Message.js"></script>
+  <script src="./src/MessageOverlay/MessageOverlay.js"></script>
+  <script src="./src/Main.js"></script>
+
+</html>

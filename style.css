@@ -1,0 +1,93 @@
+html,
+body {
+  background-color: green;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+#input {
+  font-family: monospace;
+  width: 50%;
+  position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#messages {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 30px);
+}
+
+.message-container {
+  width: 100%;
+}
+
+.message {
+  background-color: #FFF;
+  border: 2px solid #000;
+  border-radius: 5px;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px;
+}
+
+#menu {
+  background-color: #FFF;
+  display: none;
+  font-family: sans-serif;
+  height: 80vh;
+    max-height: 470px;
+  overflow-y: scroll;
+  width: 50vw;
+
+  position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+#menu .bar {
+  background-color: #333;
+  height: 21px;
+  width: 100%;
+  position: absolute;
+    top: 0px;
+}
+
+#menu .title {
+  color: #FFF;
+  float: left;
+  font-size: 12px;
+  font-family: monospace;
+  padding: 3px;
+}
+
+#menu .close {
+  float: right;
+  color: #FFF;
+  cursor: default;
+  font-size: 10px;
+  padding: 5px;
+}
+
+#menu .close:hover {
+  background-color: red;
+}
+
+#menu .inputs {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: calc(100% - 20px);
+}
+
+#menu .input {
+  font-family: monospace;
+  height: 40px;
+  padding-top: 10px;
+}
